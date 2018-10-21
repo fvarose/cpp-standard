@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("find")
+TEST_CASE("25.2.5 find")
 {
     SECTION("find returns an iterator to the first element of a "
             "collection that is equal to a certain value")

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("all_of")
+TEST_CASE("25.2.1 all_of")
 {
   SECTION("all_of returns true if all elements of a collection satisfy a "
           "predicate")
