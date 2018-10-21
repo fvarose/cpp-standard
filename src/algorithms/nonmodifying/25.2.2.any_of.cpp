@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("any_of")
+TEST_CASE("25.2.2 any_of")
 {
   SECTION("any_of returns true if at least one element of a collection "
           "satisfies a predicate")

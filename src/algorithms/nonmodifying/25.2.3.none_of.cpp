@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("none_of")
+TEST_CASE("25.2.3 none_of")
 {
   SECTION("none_of returns true if no elements of a collection satisfy a "
           "predicate")

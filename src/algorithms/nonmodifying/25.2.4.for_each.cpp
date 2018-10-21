@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("for_each")
+TEST_CASE("25.2.4 for_each")
 {
     SECTION("for_each applies a function to all elements of a collection, "
             "without modifying them.")
