@@ -7,6 +7,7 @@ add_executable(cpp-standard
     
     algorithms/nonmodifying/25.2.4.for_each.cpp
     algorithms/nonmodifying/25.2.5.find.cpp
+    algorithms/nonmodifying/25.2.6.find_end.cpp
 )
 
 max_warnings_level(cpp-standard)
