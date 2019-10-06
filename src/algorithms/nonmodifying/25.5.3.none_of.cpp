@@ -3,11 +3,9 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("25.2.3 none_of")
-{
+TEST_CASE("25.5.3 none_of") {
   SECTION("none_of returns true if no elements of a collection satisfy a "
-          "predicate")
-  {
+          "predicate") {
     auto predicate = [](int i) { return i < 4; };
     auto collection = std::vector<int>{4, 5, 6, 7, 8};
 
@@ -15,8 +13,7 @@ TEST_CASE("25.2.3 none_of")
   }
 
   SECTION("none_of returns false if at least one element of a collection "
-          "satisfy a predicate")
-  {
+          "satisfy a predicate") {
     auto predicate = [](int i) { return i < 4; };
     auto collection = std::vector<int>{3, 4, 5, 6, 7};
 
