@@ -1,13 +1,13 @@
 add_executable(cpp-standard
     main.cpp
 
-    algorithms/nonmodifying/25.2.1.all_of.cpp
-    algorithms/nonmodifying/25.2.2.any_of.cpp
-    algorithms/nonmodifying/25.2.3.none_of.cpp
+    algorithms/nonmodifying/25.5.1.all_of.cpp
+    algorithms/nonmodifying/25.5.2.any_of.cpp
+    algorithms/nonmodifying/25.5.3.none_of.cpp
     
-    algorithms/nonmodifying/25.2.4.for_each.cpp
-    algorithms/nonmodifying/25.2.5.find.cpp
-    algorithms/nonmodifying/25.2.6.find_end.cpp
+    algorithms/nonmodifying/25.5.4.for_each.cpp
+    algorithms/nonmodifying/25.5.5.find.cpp
+    algorithms/nonmodifying/25.5.6.find_end.cpp
 )
 
 max_warnings_level(cpp-standard)
