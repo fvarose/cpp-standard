@@ -3,11 +3,9 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("25.2.2 any_of")
-{
+TEST_CASE("25.5.2 any_of") {
   SECTION("any_of returns true if at least one element of a collection "
-          "satisfies a predicate")
-  {
+          "satisfies a predicate") {
     auto predicate = [](int i) { return i < 4; };
     auto collection = std::vector<int>{0, 1, 2, 3, 4, 5};
 
@@ -15,8 +13,7 @@ TEST_CASE("25.2.2 any_of")
   }
 
   SECTION("any_of returns false if no element of a collection satisfy a "
-          "predicate")
-  {
+          "predicate") {
     auto predicate = [](int i) { return i > 4; };
     auto collection = std::vector<int>{0, 1, 2, 3, 4};
 

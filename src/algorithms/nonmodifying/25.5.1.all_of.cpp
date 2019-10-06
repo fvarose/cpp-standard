@@ -3,11 +3,9 @@
 #include <algorithm>
 #include <vector>
 
-TEST_CASE("25.2.1 all_of")
-{
+TEST_CASE("25.5.1 all_of") {
   SECTION("all_of returns true if all elements of a collection satisfy a "
-          "predicate")
-  {
+          "predicate") {
     auto predicate = [](int i) { return i < 4; };
     auto collection = std::vector<int>{0, 1, 2, 3};
 
@@ -15,8 +13,7 @@ TEST_CASE("25.2.1 all_of")
   }
 
   SECTION("all_of returns false if at least one element of a collection does "
-          "not satisfy a predicate")
-  {
+          "not satisfy a predicate") {
     auto predicate = [](int i) { return i < 4; };
     auto collection = std::vector<int>{0, 1, 2, 3, 4};
 
