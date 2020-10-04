@@ -1,6 +1,8 @@
 add_executable(cpp-standard
     main.cpp
 
+    algorithms/mutating/25.6.6.fill.cpp
+
     algorithms/nonmodifying/25.5.1.all_of.cpp
     algorithms/nonmodifying/25.5.2.any_of.cpp
     algorithms/nonmodifying/25.5.3.none_of.cpp
