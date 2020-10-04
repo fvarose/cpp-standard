@@ -6,18 +6,20 @@
 using namespace Catch::Matchers;
 
 TEST_CASE("25.7.1.1 sort") {
+  auto unsorted = std::vector<int>{1, 3, 0, 2};
+
   SECTION("sort sorts a collection in place using the default operator<") {
-    auto collection = std::vector<int>{1, 3, 0, 2};
+    auto expected = std::vector<int>{0, 1, 2, 3};
 
-    std::sort(collection.begin(), collection.end());
+    std::sort(unsorted.begin(), unsorted.end());
 
-    CHECK_THAT(collection, Equals(std::vector<int>{0, 1, 2, 3}));
+    CHECK_THAT(unsorted, Equals(expected));
   }
 
   SECTION("sort sorts a collection in place using a comparison function") {
-    auto collection = std::vector<int>{1, 3, 0, 2};
-    auto compare = std::function<bool(int, int)>();
+    auto expected = std::vector<int>{3, 2, 1, 0};
 
+    auto compare = std::function<bool(int, int)>();
     SECTION("using a standard library compare function object") {
       compare = std::greater<int>();
     }
@@ -31,8 +33,8 @@ TEST_CASE("25.7.1.1 sort") {
       compare = CustomLess{};
     }
 
-    std::sort(collection.begin(), collection.end(), compare);
+    std::sort(unsorted.begin(), unsorted.end(), compare);
 
-    CHECK_THAT(collection, Equals(std::vector<int>{3, 2, 1, 0}));
+    CHECK_THAT(unsorted, Equals(expected));
   }
 }
