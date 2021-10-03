@@ -11,6 +11,8 @@ add_executable(cpp-standard
     algorithms/nonmodifying/25.5.5.find.cpp
     algorithms/nonmodifying/25.5.6.find_end.cpp
 
+    algorithms/numeric/25.10.3.accumulate.cpp
+
     algorithms/sorting/25.7.1.1.sort.cpp
 )
 
