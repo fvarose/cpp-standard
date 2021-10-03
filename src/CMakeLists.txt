@@ -12,6 +12,7 @@ add_executable(cpp-standard
     algorithms/nonmodifying/25.5.6.find_end.cpp
 
     algorithms/numeric/25.10.3.accumulate.cpp
+    algorithms/numeric/25.10.5.inner_product.cpp
 
     algorithms/sorting/25.7.1.1.sort.cpp
 )
