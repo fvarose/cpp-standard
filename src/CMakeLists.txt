@@ -13,6 +13,7 @@ add_executable(cpp-standard
 
     algorithms/numeric/25.10.3.accumulate.cpp
     algorithms/numeric/25.10.5.inner_product.cpp
+    algorithms/numeric/25.10.5.partial_sum.cpp
 
     algorithms/sorting/25.7.1.1.sort.cpp
 )
